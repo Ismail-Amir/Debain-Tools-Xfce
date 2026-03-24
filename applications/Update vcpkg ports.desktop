@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Update vcpkg ports
+Comment=Use the terminal to update vcpkg packages' ports
+Exec=bash -ic 'source ~/.profile; ~/.local/bin/update-vcpkg.sh'
+Icon=vcpkg-product-mark
+Terminal=true
+StartupNotify=false
+Categories=Development;
