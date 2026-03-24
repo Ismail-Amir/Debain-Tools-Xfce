@@ -1,0 +1,20 @@
+#!/bin/bash
+
+covers=("$2"/{.,}{folder,cover}.{jpg,png,svg,ico})
+
+for f in "${covers[@]}"; do
+  if [ -f "$f" ]; then
+    cover="$f"
+    break
+  fi
+done
+
+if [ -n "$cover" ]; then
+  convert -background none -thumbnail "$1"x"$1" "$cover" "$3" && exit 0
+fi
+
+# Fallback: remove cached thumbnail
+gdbus call --session \
+  --dest=org.freedesktop.thumbnails.Cache1 \
+  --object-path /org/freedesktop/thumbnails/Cache1 \
+  --method org.freedesktop.thumbnails.Cache1.Delete "['$4']" >/dev/null
