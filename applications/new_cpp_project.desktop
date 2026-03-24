@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=New C++ project
+Comment=Create a new C++ project directory
+Exec=bash -ic "source ~/.profile; ~/.local/bin/create_cpp_project.sh '%f'; read -p 'Press Enter to exit'"
+Icon=cpp_logo
+Version=1.0
+Type=Application
+Categories=Development;
+StartupNotify=true
+Terminal=true

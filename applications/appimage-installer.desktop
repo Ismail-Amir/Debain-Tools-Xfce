@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Install AppImage
+Comment=Extract and integrate AppImage packages
+Exec=bash -c "~/.local/bin/appimage-installer.sh %f"
+Icon=appimage
+Version=1.0
+Type=Application
+Categories=Utility;
+StartupNotify=true
+Terminal=true
+MimeType=application/vnd.appimage;application/x-iso9660-appimage;application/x-appimage;

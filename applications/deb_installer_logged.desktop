@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Deb Package Installer (logged)
+Comment=Install Debian packages and log installed dependencies
+Exec=bash -ic "source ~/.profile; ~/.local/bin/install-deb-with-log.sh '%f'; read -p 'Press Enter to exit'"
+Icon=package
+Version=1.0
+Type=Application
+Categories=System;PackageManager;
+MimeType=application/vnd.debian.binary-package;
+StartupNotify=true
+Terminal=true
+NoDisplay=true

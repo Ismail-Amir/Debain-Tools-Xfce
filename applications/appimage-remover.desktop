@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Remove AppImage Application
+Comment=Removes an installed AppImage application using ~/.local/share/installed-appimages/ logs
+Exec=bash -c "~/.local/bin/appimage-remover.sh ; read -p 'Press Enter to close...'"
+Icon=appimage
+Version=1.0
+Type=Application
+Categories=Utility;
+StartupNotify=true
+Terminal=true

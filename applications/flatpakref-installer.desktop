@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Flatpakref Installer
+Comment=Install Flatpak application from .flatpakref file
+Exec=bash -c "flatpak install --user %f; read -p 'Press Enter to close…'"
+Terminal=true
+Type=Application
+MimeType=application/x-flatpakref
+Categories=Utility;
+Icon=/home/semo/.local/share/icons/flatpak.png
+NoDisplay=true

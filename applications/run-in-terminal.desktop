@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Run in Terminal
+Comment=Run shell script and keep terminal open
+Exec=bash -ic 'source ~/.profile; bash "%f"; echo; echo "Press Enter to close..."; read'
+Icon=bash_full_colored
+Terminal=true
+Type=Application
+MimeType=application/x-shellscript;
+Categories=Utility;
+NoDisplay=true
